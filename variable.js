@@ -44,6 +44,7 @@ console.log(globalname); //globalname은 block 안 밖에서 둘다 사용가능
 //funtion, first-class function - java script에서는 기능도 변수로 설정이 가능
 
 
+
 //3-1 number
 const count = 17; //자바스크립트에서는 정수이든 소수점이든 number라는 타입으로 설정됨
 console.log(`value: ${count}, type: ${typeof count}`);
@@ -102,3 +103,8 @@ text = '8' / '2';
 console.log(`value: ${text}, type ${typeof text}`); // 변수에 스트링이지만 숫자로 기입된 스트링의 나누기 값을 주었기 떄문에, 숫자로 인식해서 출력
 
 
+//5 object type
+const ellie = {name : 'teacher', age : '20'}; //object로 설정한 컨테이너는 바꿀 수 없지만 그 안의 내용은 바꿀 수 있음
+console.log(ellie);
+ellie.age = 25;
+console.log(ellie);
